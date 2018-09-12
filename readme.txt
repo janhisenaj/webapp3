@@ -48,3 +48,5 @@ $ git config --global user.email "jan.hisenaj@lernende.bfo-vs.ch"
 
 bfo@V-C104-09 MINGW64 ~/webapp3 (master)
 $
+
+Danach Atom öffnen -> File -> Open Folder -> Danach Link von Linie 35 hineinkopieren

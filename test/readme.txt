@@ -5,6 +5,8 @@ pwd
 
 which git
 
+cd /c/xampp/htdocs
+
 git clone https://github.com/janhisenaj/webapp3
 
 ls -ld webapp3

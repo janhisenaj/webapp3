@@ -10,11 +10,17 @@
       </div>
       <div id="site">
           <div id="login">
-            <form action="login_verarbeiten.php" method="get">
-              <p>Benutzername: <input type="text" name="username" /></p>
-              <p>Passwort: <input type="text" name="pw" /></p>
-              <p>E-Mail Adresse: <input type="text" name="email" /></p>
-              <input type="submit" value="Absenden" />
+            <form action="" method="post">
+              <label>Vorname:
+                <input type="text" name="vorname" id="vorname">
+              </label>
+              <label>Nachname:
+                <input type="text" name="nachname" id="nachname">
+              </label>
+              <label>Anmerkungen:
+                <textarea name="anmerkungen" id="anmerkungen"></textarea>
+              </label>
+              <input type="submit" value="speichern">
             </form>
           </div>
       </div>

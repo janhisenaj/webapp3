@@ -1,4 +1,5 @@
 Git runterladen -> https://gitforwindows.org/
+Danach Git !Bash! öffnen
 
 pwd
 

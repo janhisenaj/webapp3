@@ -18,7 +18,7 @@
         # zu umklammern. Da wir mit Anführungszeichen den SQL String
         # angeben, nehmen wir dafür die einfachen Anführungszeichen
         # die man neben der Enter Taste auf der # findet !
-        $_sql = "SELECT * FROM users WHERE
+        $_sqli = "SELECT * FROM users WHERE
                     username='$_username' AND
                     pw='$_pw'
                 LIMIT 1";
@@ -40,11 +40,11 @@
             $_SESSION["login"] = 1;
 
             # Den Eintrag vom User in der Session speichern !
-            $_SESSION["user"] = mysql_fetch_array($_res, MYSQL_ASSOC);
+            $_SESSION["username"] = mysql_fetch_array($_res, MYSQL_ASSOC);
 
             # Das Einlogdatum in der Tabelle setzen !
             $_sql = "UPDATE users SET letzter_login=NOW()
-                     WHERE id=".$_SESSION["user"]["id"];
+                     WHERE id=".$_SESSION["username"]["id"];
             mysql_query($_sql);
             }
         else

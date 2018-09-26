@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 26. Sep 2018 um 15:43
+-- Erstellungszeit: 26. Sep 2018 um 16:43
 -- Server-Version: 10.1.33-MariaDB
 -- PHP-Version: 7.2.6
 
@@ -55,10 +55,10 @@ INSERT INTO `posts` (`ID`, `titel`, `bilder`, `text`, `leistung`, `hubraum`, `zy
 -- --------------------------------------------------------
 
 --
--- Tabellenstruktur für Tabelle `users.sql`
+-- Tabellenstruktur für Tabelle `users`
 --
 
-CREATE TABLE `users.sql` (
+CREATE TABLE `users` (
   `ID` int(11) NOT NULL,
   `username` text NOT NULL,
   `pw` text NOT NULL,
@@ -66,10 +66,10 @@ CREATE TABLE `users.sql` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Daten für Tabelle `users.sql`
+-- Daten für Tabelle `users`
 --
 
-INSERT INTO `users.sql` (`ID`, `username`, `pw`, `email`) VALUES
+INSERT INTO `users` (`ID`, `username`, `pw`, `email`) VALUES
 (1, 'janhisenaj', 'admin', 'jan.hisenaj@hotmail.com'),
 (2, 'cooswitjes', 'admin', 'coos.witjes@gmail.com');
 
@@ -84,9 +84,9 @@ ALTER TABLE `posts`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indizes für die Tabelle `users.sql`
+-- Indizes für die Tabelle `users`
 --
-ALTER TABLE `users.sql`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -100,9 +100,9 @@ ALTER TABLE `posts`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT für Tabelle `users.sql`
+-- AUTO_INCREMENT für Tabelle `users`
 --
-ALTER TABLE `users.sql`
+ALTER TABLE `users`
   MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 

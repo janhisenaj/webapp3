@@ -24,3 +24,10 @@ else
     die('keine Verbindung möglich: ' . mysqli_error());
 }
 ?>
+
+
+
+    //Um die Datenbankverbindung herzustellen geben Sie folgendes zuoberst im Dokument ein:
+      <?php
+      //require_once ('../db_verbindung.php');
+    //?>

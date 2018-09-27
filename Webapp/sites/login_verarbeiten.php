@@ -54,13 +54,13 @@
         }
 
     # Ist der User eingeloggt ???
-    #if ($_SESSION["login"] == 0)
+    if ($_SESSION["login"] == 0)
         {
         # ist nicht eingeloggt, also Formular anzeigen, die Datenbank
         # schliessen und das Programm beenden
-        #include("login.html");
-        #mysql_close($link);
-        #exit;
+        include("login.html");
+        mysql_close($link);
+        exit;
         }
 
     # Hier wäre der User jetzt gültig angemeldet ! Hier kann
